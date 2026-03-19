@@ -37,11 +37,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("휴먼둥근헤드라인", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            label1.Font = new Font("휴먼둥근헤드라인", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 129);
             label1.ForeColor = SystemColors.ActiveCaption;
             label1.Location = new Point(12, 22);
             label1.Name = "label1";
-            label1.Size = new Size(486, 49);
+            label1.Size = new Size(384, 39);
             label1.TabIndex = 0;
             label1.Text = "Echo Messenger";
             label1.Click += label1_Click;

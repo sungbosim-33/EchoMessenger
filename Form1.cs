@@ -9,7 +9,7 @@ namespace EchoMessenger
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -24,10 +24,12 @@ namespace EchoMessenger
 
         private void bt_Click(object sender, EventArgs e)
         {
-                        string msg= txtb.Text;
+            string msg = txtb.Text.Trim();
             if (!string.IsNullOrWhiteSpace(msg))
             {
-                lstb.Items.Add(msg);
+                string result = $"{DateTime.Now:[HH:mm:ss]} {msg}";
+                lstb.Items.Add(result);
+                label1.Text = "Echo Messenger,현재 대화 : " + lstb.Items.Count.ToString() + "개";
                 txtb.Clear();
             }
 

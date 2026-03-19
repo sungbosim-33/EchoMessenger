@@ -24,14 +24,21 @@ namespace EchoMessenger
 
         private void bt_Click(object sender, EventArgs e)
         {
+                        string msg= txtb.Text;
+            if (!string.IsNullOrWhiteSpace(msg))
+            {
+                lstb.Items.Add(msg);
+                txtb.Clear();
+            }
 
+            txtb.Focus();
         }
 
         private void bt_MouseClick(object sender, MouseEventArgs e)
         {
-            string msg= txtb.Text;
-            lstb.Items.Add(msg);
-            txtb.Clear();
+
+
+
         }
     }
 }
